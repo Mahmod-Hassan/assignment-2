@@ -5,16 +5,25 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+/*----------------------------
+ banner part style start 
+ ----------------------------*/
 header {
     display: flex;
     justify-content: center;
+    margin: 50px 0px;
 }
 .top-banner {
     display: flex;
-    width: 90vw;
     border-radius: 10px;
+}
+.top-banner, .blog-info>div {
     background-color: #161616;
 }
+.top-banner, .blog-container {
+    width: 1200px;
+}
+
 .half-width {
     color: white;
     width: 50%;
@@ -28,7 +37,7 @@ header {
     width: 100%;
     height: 100%;
 }
-button {
+.watch-live-button {
     background-color: #DD0000;
     color: white;
     padding: 7px 15px;
@@ -36,3 +45,58 @@ button {
     border: none;
     border-radius: 3px;
 }
+/* ----------------------------
+banner part styling end 
+-----------------------------*/
+
+
+/* -------------------
+blog style start 
+------------------------*/
+main {
+    display: flex;
+    justify-content: center;
+}
+.blog-container {
+    display: flex;
+}
+.blog-info {
+    min-width: 300px;
+    text-align: center;
+}
+.blog-info>div {
+    padding: 50px 0 0 0;
+}
+.blog-info button {
+    width: 70%;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+}
+article button, .blog-info button {
+    background-color: white;
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+.all-blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    width: auto;
+}
+article {
+    padding: 10px;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+article img {
+    width: 100%;
+}
+.all-blogs span {
+    color: gray;
+    margin-right: 20px;
+}
+/* responsive for mobile device */
+
+/* responsive for medium device */
